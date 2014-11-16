@@ -1,0 +1,26 @@
+{
+    "1": {
+        "id": 1,
+        "name": "Cancer",
+        "levels": [60,20,30,40,50],
+        "confidence": 80,
+        "title": "Green tea prevents cancer",
+        "content": "Because YADSFASDFASDFASDFASDFASDFASYA"
+    },
+    "2":{
+        "id": 2,
+        "name": "Heart Disease",
+        "levels": [70,20,30,40,50],
+        "confidence": 85,
+        "title": "Green tea prevents hard disease",
+        "content": "Because YADSFASDFASDFASDFASDFASDFASYA"
+        },
+    "3":{
+        "id": 3,
+        "name": "Obesity",
+        "levels": [80,20,30,40,50],
+        "confidence": 90,
+        "title": "Green tea prevents hard disease",
+        "content": "Because YADSFASDFASDFASDFASDFASDFASYA"
+    }
+}
