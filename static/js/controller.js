@@ -28,8 +28,43 @@ Controller.prototype = {
       controller.parseJsonDiseaseData(data);
       controller.view.createTitle(controller.treatment);
       controller.view.createList(controller.diseases);
+      controller.createCharts();
       $('body').scrollTo('#banner');
     });
+  },
+
+  createCharts: function() {
+    var controller = this;
+    for (var i = 0; i < controller.diseases.length; i++) {
+      new Morris.Bar({
+        // ID of the element in which to draw the chart.
+        element: controller.diseases[i].id.toString()+"bar",
+        // Chart data records -- each entry in this array corresponds to a point on
+        // the chart.
+        data: [
+          { year: 'Metric1', value: controller.diseases[i].levels[0] },
+          { year: 'Metric2', value: controller.diseases[i].levels[1] },
+          { year: 'Metric3', value: controller.diseases[i].levels[2] },
+          { year: 'Metric4', value: controller.diseases[i].levels[3] },
+          { year: 'Metric5', value: controller.diseases[i].levels[4] }
+        ],
+        // The name of the data record attribute that contains x-values.
+        xkey: 'year',
+        // A list of names of data record attributes that contain y-values.
+        ykeys: ['value'],
+        // Labels for the ykeys -- will be displayed when you hover over the
+        // chart.
+        labels: ['Metrics'],
+        parseTime:false
+      });
+    new Morris.Donut({
+      element: controller.diseases[i].id.toString()+"donut",
+      data: [
+        {label: "Confidence", value: controller.diseases[i].confidence},
+        {label: "", value: 20},
+      ]
+      });
+    }
   },
 
   parseJsonDiseaseData: function(diseaseData){
