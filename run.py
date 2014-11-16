@@ -15,13 +15,13 @@ def index():
 @APP.route('/diseases', methods=['GET', 'POST'])
 def diseases():
     if request.method == 'POST':
-        return return_diseases()
+        response = get_diseases()
     else:
-        print "inside else"
-        return show_diseases()
+        response = show_diseases()
+    return response
 
 
-def return_diseases():
+def get_diseases():
     with open('diseases.json', 'r') as json_file:
         text = json_file.read()
     pythoned = json.loads(text)
