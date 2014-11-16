@@ -12,13 +12,10 @@ def index():
     return render_template('index.html')
 
 
-@APP.route('/diseases', methods=['GET', 'POST'])
+@APP.route('/diseases', methods=['POST'])
 def diseases():
-    if request.method == 'POST':
-        search_query = request.form['treatment']
-        response = get_diseases(search_query)
-    else:
-        response = show_diseases()
+    search_query = request.form['treatment']
+    response = get_diseases(search_query)
     return response
 
 
@@ -27,14 +24,9 @@ def get_diseases(search_query):
         text = json_file.read()
     pythoned = json.loads(text)
 
-    print search_query
-    pythoned = pythoned.get(search_query, pythoned['chocolate'])
+    pythoned = pythoned.get(search_query, pythoned['Chocolate'])
 
     return json.jsonify(pythoned)
-
-
-def show_diseases():
-    return render_template('show.html')
 
 
 if __name__ == '__main__':

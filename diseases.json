@@ -1,5 +1,5 @@
 {
-    "tea": {
+    "Tea": {
         "1": {
             "id": 1,
             "name": "Cancer",
@@ -25,7 +25,7 @@
             "content": "Because Reasons"
         }
     },
-    "chocolate": {
+    "Chocolate": {
         "1": {
             "id": 1,
             "name": "Obesity",
@@ -33,6 +33,80 @@
             "confidence": 90,
             "title": "Chocolate helps you fight obesity",
             "content": "Because Reasons"
+        }
+    },
+    "Vitamin C": {
+        "1": {
+            "id": 1,
+            "name": "Lung Disease in Cystic Fibrosis",
+            "levels": [90,100,30,60,20],
+            "confidence": 50,
+            "title": "Vitamin C and lung disease",
+            "content": "There appears to be conflicting evidence regarding the clinical effectiveness of antioxidant supplementation in cystic fibrosis"
+        },
+        "2": {
+            "id": 2,
+            "name": "Gastrointestinal Cancers",
+            "levels": [99,67,73,89,100],
+            "confidence": 90,
+            "title": "Vitamin C and Gastrointestinal Cancers",
+            "content": "We could not find convincing evidence that antioxidant supplements prevent gastrointestinal cancers"
+            },
+        "3": {
+            "id": 3,
+            "name": "Lateral Sclerosis and Motor Neuron Disease",
+            "levels": [33, 23, 45, 66],
+            "confidence": 60,
+            "title": "Vitamin C and Lateral Sclerosis and Motor Neuron Disease",
+            "content": "There is insufficient evidence of efficacy of individual antioxidants, or antioxidants in general, in the treatment of people with amyotrophic lateral sclerosis."
+        },
+        "4": {
+            "id": 4,
+            "name": "Cataract",
+            "levels": [12, 30, 21, 18, 12],
+            "confidence": 80,
+            "title": "Vitamin C and Cataract",
+            "content": "We could not find convincing evidence that antioxidant supplements prevent cataract"
+            },
+        "5": {
+            "id": 5,
+            "name": "Pregnancy",
+            "levels": [10, -20],
+            "confidence": 20,
+            "title": "Vitamin C supplementation in pregnancy",
+            "content": "The data are too few to say if vitamin C supplementation, alone or combined with other supplements, is beneficial during pregnancy. Preterm birth may have been increased with vitamin C supplementation."
+        },
+        "6": {
+            "id": 6,
+            "name": "Asthma",
+            "levels": [80],
+            "confidence": 20,
+            "title": "Vitamin C supplementation for asthma",
+            "content": "At present, evidence from randomised-controlled trials is insufficient to recommend a specific role for vitamin C in the treatment of asthma."
+        },
+        "7": {
+            "id": 7,
+            "name": "Common Cold",
+            "levels": [60, 80, 70],
+            "confidence": 80,
+            "title": "Vitamin C for preventing and treating the common cold",
+            "content": "Routine vitamin C supplementation is not justified, yet vitamin C may be useful for people exposed to brief periods of severe physical exercise"
+        },
+        "8": {
+            "id": 8,
+            "name": "Pneumonia",
+            "levels": [10, 20, 12],
+            "confidence": 20,
+            "title": "Vitamin C for preventing and treating pneumonia",
+            "content": "The current evidence is too weak to advocate prophylactic use of vitamin C to prevent pneumonia in the general population. Nevertheless, therapeutic vitamin C supplementation may be reasonable for pneumonia patients who have low vitamin C plasma levels because its cost and risks are low."
+        },
+        "9": {
+            "id": 9,
+            "name": "Asthma and exercise-induced bronchoconstriction",
+            "levels": [15, 23],
+            "confidence": 10,
+            "title": "Vitamin C for asthma and exercise-induced bronchoconstriction.",
+            "content": "Currently, evidence is not available to provide a robust assessment on the use of vitamin C in the management of asthma or exercise-induced bronchoconstriction"
         }
     }
 }
