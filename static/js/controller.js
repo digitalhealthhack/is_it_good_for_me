@@ -23,7 +23,7 @@ Controller.prototype = {
   getDiseaseData: function() {
     console.log("inside getDiseaseData");
     var controller = this;
-    $.post( "/diseases", controller.treatment, function(data) {
+    $.post( "/diseases", {'treatment': controller.treatment}, function(data) {
       console.log("successful ajax");
       controller.parseJsonDiseaseData(data);
       controller.view.createTitle(controller.treatment);
